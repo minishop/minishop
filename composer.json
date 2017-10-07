@@ -6,7 +6,10 @@
     "type": "project",
     "require": {
         "php": ">=7.1.0",
+        "johnpbloch/wordpress-core": "4.7.*",
+        "oomphinc/composer-installers-extender": "^1.0",
         "nwidart/laravel-modules": "~2.0",
+        "cloudshop/composer-merge-plugin": "~1.0",
         "cartalyst/sentinel": "~2.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
@@ -31,7 +34,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": ["fixture/App/", "app/"]
         }
     },
     "autoload-dev": {
@@ -40,8 +43,26 @@
         }
     },
     "extra": {
+        "merge-plugin": {
+            "include": [
+                "app/*/composer.json",
+                "packages/*/*/composer.json"
+            ],
+            "require": [
+            ],
+            "recurse": true,
+            "replace": false,
+            "merge-dev": false,
+            "merge-extra": true,
+            "merge-scripts": true,
+            "merge-extra-deep": true
+        },
+        "installer-types": ["wordpress-core"],
+        "installer-paths": {
+            "public/site/app": ["type:wordpress-core"]
+        },
         "branch-alias": {
-            "dev-master": "3.0-dev"
+            "dev-master": "2.0-dev"
         },
         "laravel": {
             "dont-discover": [
@@ -67,6 +88,7 @@
         ]
     },
     "config": {
+        "bin-dir": "bin",
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
@@ -77,6 +99,10 @@
         "shopes": {
             "type": "composer",
             "url": "https://packagist.shopes.cn"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
         }
     }
 }
