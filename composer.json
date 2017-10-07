@@ -7,13 +7,21 @@
     "require": {
         "php": ">=7.1.0",
         "johnpbloch/wordpress-core": "4.7.*",
-        "oomphinc/composer-installers-extender": "^1.0",
         "nwidart/laravel-modules": "~2.0",
-        "cloudshop/composer-merge-plugin": "~1.0",
         "cartalyst/sentinel": "~2.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "minishop/admin": "~1.0",
+        "minishop/catalog": "~1.0",
+        "minishop/console": "~1.0",
+        "minishop/exceptions": "~1.0",
+        "minishop/http": "~1.0",
+        "minishop/install": "~1.0",
+        "minishop/providers": "~1.0",
+        "minishop/site": "~1.0",
+        "minishop/system": "~1.0",
+        "minishop/weixin": "~1.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "~3.0",
@@ -26,17 +34,8 @@
         "orchestra/testbench": "^3.5",
         "phpunit/phpunit": "~6.0",
         "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*",
-        "minishop/admin": "~1.0",
-        "minishop/catalog": "~1.0",
-        "minishop/console": "~1.0",
-        "minishop/exceptions": "~1.0",
-        "minishop/http": "~1.0",
-        "minishop/install": "~1.0",
-        "minishop/providers": "~1.0",
-        "minishop/site": "~1.0",
-        "minishop/system": "~1.0",
-        "minishop/weixin": "~1.0"
+        "symfony/dom-crawler": "3.1.*"
+
     },
     "autoload": {
         "classmap": [
