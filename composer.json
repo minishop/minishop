@@ -1,6 +1,6 @@
 {
     "name": "minishop/minishop",
-    "description": "The Laravel Minishop E-Commerce Framework.",
+    "description": "The Laravel Minishop E-Commerce Platform.",
     "keywords": ["framework", "laravel", "minishop", "e-commerce"],
     "license": "MIT",
     "type": "project",
