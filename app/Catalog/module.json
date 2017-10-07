@@ -1,0 +1,16 @@
+{
+    "name": "Catalog",
+    "alias": "catalog",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Catalog\\Providers\\CatalogServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
