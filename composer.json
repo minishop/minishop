@@ -26,7 +26,17 @@
         "orchestra/testbench": "^3.5",
         "phpunit/phpunit": "~6.0",
         "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*"
+        "symfony/dom-crawler": "3.1.*",
+        "minishop/admin": "~1.0",
+        "minishop/catalog": "~1.0",
+        "minishop/console": "~1.0",
+        "minishop/exceptions": "~1.0",
+        "minishop/http": "~1.0",
+        "minishop/install": "~1.0",
+        "minishop/providers": "~1.0",
+        "minishop/site": "~1.0",
+        "minishop/system": "~1.0",
+        "minishop/weixin": "~1.0"
     },
     "autoload": {
         "classmap": [
@@ -57,9 +67,10 @@
             "merge-scripts": true,
             "merge-extra-deep": true
         },
-        "installer-types": ["wordpress-core"],
+        "installer-types": ["wordpress-core", "minishop-module"],
         "installer-paths": {
-            "public/site/app": ["type:wordpress-core"]
+            "public/site/app": ["type:wordpress-core"],
+            "app/{$name}/": ["type:minishop-module"]
         },
         "branch-alias": {
             "dev-master": "2.0-dev"
