@@ -10,3 +10,5 @@ composer.lock
 .env
 docs/_ide_helper.php
 docs/.phpstorm.meta.php
+/app/*
+!/app/.gitignore
