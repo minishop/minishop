@@ -91,5 +91,5 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 - [问题反馈](https://github.com/minishop/minishop/issues)
 - [文档](https://github.com/minishop/minishop/wiki)
 - [参与开发(Pull Request)](https://github.com/minishop/minishop/pulls)
-- [Bytedna Development Team]()
+- [Bossware Development Team]()
 
