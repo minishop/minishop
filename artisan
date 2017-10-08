@@ -14,10 +14,11 @@ define('LARAVEL_START', microtime(true));
 | loading of any our classes "manually". Feels great to relax.
 |
 */
+require __DIR__ . '/storage/vendor/autoload.php';
 
-require __DIR__.'/vendor/autoload.php';
+if(!class_exists(App\Bootstrap\Bootstrap::class)) return;
 
-$app = require_once __DIR__.'/bootstrap/app.php';
+$app = App\Bootstrap\Bootstrap::application();
 
 /*
 |--------------------------------------------------------------------------

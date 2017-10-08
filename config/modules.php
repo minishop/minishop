@@ -61,7 +61,7 @@ return [
         |
         */
 
-        'modules' => base_path('app'),
+        'modules' => app_path(),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
@@ -129,7 +129,8 @@ return [
     'scan' => [
         'enabled' => true,
         'paths' => [
-            base_path('vendor/*/*'),
+            storage_path('vendor/*/*'),
+            app_path('Addon/*/*'),
         ],
     ],
     /*

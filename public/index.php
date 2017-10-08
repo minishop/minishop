@@ -1,22 +1,8 @@
 <?php
-// Version
-define('VERSION', '2.0.0.2');
+/**
+ * Created by PhpStorm.
+ * User: Starwind
+ * Date: 2017/10/8
+ */
 
-// Configuration
-if (is_file('config.php')) {
-	require_once('config.php');
-}
-
-// Install
-if (!defined('DIR_APPLICATION')) {
-	header('Location: install/index.php');
-	exit;
-}
-
-define('PAY_METHOD_CALLBACK', '');
-date_default_timezone_set('PRC');
-
-// Startup
-require_once(DIR_SYSTEM . 'startup.php');
-
-start('catalog');
+require_once __DIR__."/catalog/index.php";

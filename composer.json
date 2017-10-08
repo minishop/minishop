@@ -1,27 +1,13 @@
 {
     "name": "minishop/minishop",
-    "description": "The Laravel Minishop E-Commerce Platform.",
-    "keywords": ["framework", "laravel", "minishop", "e-commerce"],
-    "license": "MIT",
     "type": "project",
+    "description": "Laravel Minishop",
+    "keywords": ["laravel", "minishop", "ecommerce", "framework", "opensource"],
+    "homepage": "https://minishop.shopes.cn",
+    "license": "GPL-3.0+",
     "require": {
         "php": ">=7.1.0",
-        "johnpbloch/wordpress-core": "4.7.*",
-        "nwidart/laravel-modules": "~2.0",
-        "cartalyst/sentinel": "~2.0",
-        "fideloper/proxy": "~3.3",
-        "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0",
-        "minishop/admin": "~1.0",
-        "minishop/catalog": "~1.0",
-        "minishop/console": "~1.0",
-        "minishop/exceptions": "~1.0",
-        "minishop/http": "~1.0",
-        "minishop/install": "~1.0",
-        "minishop/providers": "~1.0",
-        "minishop/site": "~1.0",
-        "minishop/system": "~1.0",
-        "minishop/weixin": "~1.0"
+        "minishop/app": "~1.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "~3.0",
@@ -35,77 +21,46 @@
         "phpunit/phpunit": "~6.0",
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*"
-
     },
-    "autoload": {
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ],
-        "psr-4": {
-            "App\\": ["fixture/App/", "app/"]
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
+    "config": {
+        "vendor-dir": "./storage/vendor/",
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     },
     "extra": {
         "merge-plugin": {
             "include": [
                 "app/*/composer.json",
-                "packages/*/*/composer.json"
+                "app/Addon/*/*/composer.json"
             ],
             "require": [
             ],
             "recurse": true,
             "replace": false,
-            "merge-dev": false,
+            "merge-dev": true,
             "merge-extra": true,
             "merge-scripts": true,
             "merge-extra-deep": true
         },
-        "installer-types": ["wordpress-core", "minishop-module"],
+        "installer-types": ["wordpress-core", "minishop-module", "project", "minishop-addon"],
         "installer-paths": {
-            "public/site/app": ["type:wordpress-core"],
-            "app/{$name}/": ["type:minishop-module"]
+            "app/Laravel": ["laravel/laravel"],
+            "public/home/app": ["type:wordpress-core"],
+            "app/{$name}/": ["type:minishop-module"],
+            "app/Addon/{$name}/": ["type:minishop-addon"]
         },
         "branch-alias": {
             "dev-master": "2.0-dev"
-        },
-        "laravel": {
-            "dont-discover": [
-            ]
         }
-    },
-    "scripts": {
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate"
-        ],
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
-        ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta",
-            "php artisan optimize"
-        ]
-    },
-    "config": {
-        "bin-dir": "bin",
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
+        "local": {
+            "type": "path",
+            "url": "storage/packages/*"
+        },
         "shopes": {
             "type": "composer",
             "url": "https://packagist.shopes.cn"
