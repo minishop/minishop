@@ -24,7 +24,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 ## 安装
 
 
-1. 安装需要配置虚拟主机(VirtualHost), 将网站根目录对应到 `public/` 目录, 例如 Apache 的配置
+1. 安装需要配置域名(VirtualHost), 将网站根目录设置为 `public/` 目录, 例如 Apache 的配置(假设站点主目录为 D:\www\):
 
     ##### **重要: 必须安装在域名根目录下, 不能在某个网站子目录下(比如: `http://localhost/minishop`) 否则会路径出错**
 
@@ -33,7 +33,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
              ServerName www.minishop.dev
         </VirtualHost>
 
-    请自行配置好 `Composer` 执行环境, 命令行窗口进入 `D:\www\` 执行安装:
+    请自行配置好 `Composer` 执行环境, 命令行窗口进入 `D:\www\` 目录执行安装:
 
         composer create-project minishop/minishop minishop.dev
     
@@ -42,6 +42,8 @@ Laravel Minishop provides a professional and reliable foundation from which to b
         composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
     配置好你的 Composer 国内镜像再进行安装, 可以参考 [Composer 中国镜像站点](http://www.phpcomposer.com)
+    
+    Windows 本地集成开发环境推荐使用 Laragon 支持自动配置本地域名, 官方网站: [http://laragon.org](http://laragon.org)
 
 2. 等待 Composer 代码下载完毕后, 用浏览器访问网站根目录(比如: http://www.minishop.dev/) 
 
