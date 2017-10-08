@@ -1,3 +1,4 @@
+<p align="center"><img src="docs/static/logo.png?raw=true" title="Laravel Minishop"></p>
 # Laravel Minishop 微信小商店
 
 ## 概述
