@@ -58,7 +58,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
 ## Links
 
-[点击加入群: 665863675﹝Laravel Minishop﹞](https://jq.qq.com/?_wv=1027&k=5qYJy7l)
+[点击加入群: 665863675﹝Laravel Minishop﹞](https://jq.qq.com/?_wv=1027&k=5qYJy7I)
 
 - [github 发布页面](https://github.com/minishop/minishop)
 - [问题反馈](https://github.com/minishop/minishop/issues)
