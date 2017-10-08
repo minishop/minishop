@@ -46,7 +46,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
     
     ❤️ Windows 本地集成开发环境推荐使用 Laragon 完整版(支持自动配置本地域名并自带`git`,`composer`和微信开发需要的`ngrok`), 官方网站: [http://laragon.org](http://laragon.org)
 
-2. 等待 Composer 代码下载完毕后, 用浏览器访问网站域名(比如: [http://www.minishop.dev/](http://www.minishop.dev/) ),正常情况下会进入安装向导页面,
+2. 等待 Composer 代码下载完毕后, 用浏览器访问网站域名(比如: [http://www.minishop.dev/]() ),正常情况下会进入安装向导页面,
 
     填写数据库参数和管理员账号信息(需要先用 phpmyadmin, navicat 等工具创建好数据库)完成安装
     
