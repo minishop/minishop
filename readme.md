@@ -17,6 +17,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
 * Mysql 5.7+
 * PHP 7.0+
+* composer 1.0+
 * Apache 服务器需要配置 mod_rewrite, Nginx 需要配置好伪静态规则(与 Laravel 相同)
 * PHP mbstring, curl, openssl, mcrypt, gd 等扩展(以安装向导检测信息为准)
 * Memcached 或者 Redis 缓存
