@@ -29,7 +29,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
     ##### **重要: 必须安装在域名根目录下, 不能在某个网站子目录下(比如: `http://localhost/minishop`) 否则会路径出错**
 
         <VirtualHost *:80>
-             DocumentRoot "D:\www\minishop.dev\public"
+             DocumentRoot "D:/www/minishop.dev/public"
              ServerName www.minishop.dev
         </VirtualHost>
 
