@@ -1,4 +1,4 @@
-# Laravel Minishop 微信迷你小店
+# Laravel Minishop 微信小商店
 
 ## 概述
 
