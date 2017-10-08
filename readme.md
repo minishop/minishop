@@ -26,9 +26,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
 1. 安装需要配置域名(VirtualHost), 将网站根目录设置为 `public/` 目录, 例如 Apache 的配置(假设站点主目录为 D:\www\):
 
-    #### 重要:
-    
-    ##### 必须安装在域名根目录下, 不能在某个网站子目录下(比如: `http://localhost/minishop`) 否则会路径出错
+    #### 必须安装在域名根目录下, 不能在某个网站子目录下(比如: `http://localhost/minishop`) 否则会路径出错
 
         <VirtualHost *:80>
              DocumentRoot "D:/www/minishop.dev/public"
