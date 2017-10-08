@@ -51,10 +51,24 @@ Laravel Minishop provides a professional and reliable foundation from which to b
     
 3. 后台访问网址: `http://您的域名/admin` 后台用户名与密码在安装向导页面设置
 
-### 注意
+    ### 注意
+    
+    * Apache 服务器需要开启 mod_rewrite 伪静态扩展, 并保证扩展已经正确配置好
+    * Nginx 伪静态规则配置请参考 Laravel Nginx 伪静态设置
+    
+## 二次开发
 
-* Apache 服务器需要开启 mod_rewrite 伪静态扩展, 并保证扩展已经正确配置好
-* Nginx 伪静态规则配置请参考 Laravel Nginx 伪静态设置
+- `app/` 目录下模块文件在用 composer 进行更新时会被删除并重新下载, 
+
+    如果需要修改或者扩展模块里面的类, 可以将类文件按照类的命名空间对应的路径复制到 `fixture/` 目录下修改, 程序会优先加载
+    
+    例如要扩展 `App\Bootstrap\Bootstrap` 类, 可以把 `app/Bootstrap/Boostrap.php` 复制到 `fixture/App/Bootstrap/Boostrap.php`, 然后修改代码
+    
+- 静态文件(如 .js, .css, .png 等)以及模板文件(.twig, .blade.php 等), 请修改 `public/` 目录里的文件, 更新模块时不会被强制覆盖
+
+    更新模块后如果出现页面异常或者报错, 可能需要手动强制更新 `public/` 下的模块文件, 请先备份您修改过的文件然后在项目目录( `public/` 目录的上一层)里执行:
+    
+        php artisan vendor:publish --tags=public --force 
 
 ## License
 
