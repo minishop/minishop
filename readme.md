@@ -33,7 +33,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
              ServerName www.minishop.dev
         </VirtualHost>
 
-    请自行配置好 `Composer` 执行环境, 进入 `D:\www\` 执行安装:
+    请自行配置好 `Composer` 执行环境, 命令行窗口进入 `D:\www\` 执行安装:
 
         composer create-project minishop/minishop minishop.dev
     
@@ -45,7 +45,9 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
 2. 等待 Composer 代码下载完毕后, 用浏览器访问网站根目录(比如: http://www.minishop.dev/) 
 
-    在安装向导界面填写数据库信息(需要先用 phpmyadmin, navicat 等工具创建好数据库)
+    在安装向导页面填写数据库信息(需要先用 phpmyadmin, navicat 等工具创建好数据库)
+    
+3. 后台访问网址: `http://您的域名/admin` 后台用户名与密码在安装向导页面设置
 
 ### 注意
 
@@ -58,8 +60,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
 ## Links
 
-[点击加入群: 665863675﹝Laravel Minishop﹞](https://jq.qq.com/?_wv=1027&k=5qYJy7I)
-
+- [点击加入群: 665863675﹝Laravel Minishop﹞](https://jq.qq.com/?_wv=1027&k=5qYJy7I)
 - [github 发布页面](https://github.com/minishop/minishop)
 - [问题反馈](https://github.com/minishop/minishop/issues)
 - [文档](https://github.com/minishop/minishop/wiki)
