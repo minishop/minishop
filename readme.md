@@ -24,6 +24,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 ## 安装
 
 ##### **重要: 必须安装在域名根目录下, 不能在某个网站子目录下(比如: `http://localhost/minishop`) 否则会路径出错**
+##### **重要: 必须安装在域名根目录下, 不能在某个网站子目录下(比如: `http://localhost/minishop`) 否则会路径出错**
 
 
 1. 安装需要配置虚拟主机(VirtualHost), 将网站根目录对应到 `public/` 目录, 例如 Apache 的配置
