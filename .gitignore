@@ -8,4 +8,5 @@ node_modules
 /storage/laravel
 composer.lock
 .env
-
+docs/_ide_helper.php
+docs/.phpstorm.meta.php
