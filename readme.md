@@ -54,7 +54,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
     
     - Apache 服务器需要开启 mod_rewrite 伪静态扩展, 并保证扩展已经正确配置好
     - Nginx 伪静态规则配置请参考 Laravel Nginx 伪静态设置
-    - ❤️ Windows 本地集成开发环境推荐使用 Laragon WAMP (不能在安装界面选简体中文, 安装好以后在设置里切换到中文)
+    - ❤️ Windows 本地集成开发环境推荐使用 Laragon WAMP (用英文安装好以后在设置里切换到中文)
     
         (支持自动配置本地域名并自带`git`,`composer`和微信开发需要的`ngrok`), 
         
