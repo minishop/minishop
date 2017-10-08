@@ -46,9 +46,9 @@ Laravel Minishop provides a professional and reliable foundation from which to b
     
     ❤️ Windows 本地集成开发环境推荐使用 Laragon 完整版(支持自动配置本地域名并自带`git`,`composer`和微信开发需要的`ngrok`), 官方网站: [http://laragon.org](http://laragon.org)
 
-2. 等待 Composer 代码下载完毕后, 用浏览器访问网站根目录(比如: http://www.minishop.dev/) 
+2. 等待 Composer 代码下载完毕后, 用浏览器访问网站域名(比如: http://www.minishop.dev/),正常情况下会进入安装向导页面,
 
-    在安装向导页面填写数据库信息(需要先用 phpmyadmin, navicat 等工具创建好数据库)
+    填写数据库参数和管理员账号信息(需要先用 phpmyadmin, navicat 等工具创建好数据库)完成安装
     
 3. 后台访问网址: `http://您的域名/admin` 后台用户名与密码在安装向导页面设置
 
@@ -65,11 +65,12 @@ Laravel Minishop provides a professional and reliable foundation from which to b
     
     例如要扩展 `App\Bootstrap\Bootstrap` 类, 可以把 `app/Bootstrap/Boostrap.php` 复制到 `fixture/App/Bootstrap/Boostrap.php`, 然后修改代码
     
-- 静态文件(如 .js, .css, .png 等)以及模板文件(.twig, .blade.php 等), 请修改 `public/` 目录里的文件, 更新模块时不会被强制覆盖
+- 静态文件(如 `.js`, `.css`, `.png` 等)以及模板文件(`.twig`, `.blade.php` 等), 请修改 `public/` 目录里的文件, 更新模块时不会被强制覆盖
 
     更新模块后如果出现页面异常或者报错, 可能需要手动强制更新 `public/` 下的模块文件, 请先备份您修改过的文件然后在项目目录( `public/` 目录的上一层)里执行:
     
         php artisan vendor:publish --tags=public --force 
+        
 
 ## License
 
@@ -77,7 +78,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
 ## Links
 
-- [点击加入群: 665863675﹝Laravel Minishop﹞](https://jq.qq.com/?_wv=1027&k=5qYJy7I)
+- [点这里加入群: 665863675﹝Laravel Minishop﹞](https://jq.qq.com/?_wv=1027&k=5qYJy7I)
 - [github 发布页面](https://github.com/minishop/minishop)
 - [问题反馈](https://github.com/minishop/minishop/issues)
 - [文档](https://github.com/minishop/minishop/wiki)
