@@ -54,7 +54,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 ### 注意
 
 * Apache 服务器需要开启 mod_rewrite 伪静态扩展, 并保证扩展已经正确配置好
-* nginx 伪静态规则配置请参考 Laravel Nginx 伪静态设置
+* Nginx 伪静态规则配置请参考 Laravel Nginx 伪静态设置
 
 ## License
 
