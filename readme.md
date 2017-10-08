@@ -44,7 +44,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
     配置好你的 Composer 国内镜像再进行安装, 可以参考 [Composer 中国镜像站点](http://www.phpcomposer.com)
     
-    ❤️ Windows 本地集成开发环境推荐使用 Laragon 完整版(支持自动配置本地域名并自带`git`和微信开发需要的`ngrok`), 官方网站: [http://laragon.org](http://laragon.org)
+    ❤️ Windows 本地集成开发环境推荐使用 Laragon 完整版(支持自动配置本地域名并自带`git`,`composer`和微信开发需要的`ngrok`), 官方网站: [http://laragon.org](http://laragon.org)
 
 2. 等待 Composer 代码下载完毕后, 用浏览器访问网站根目录(比如: http://www.minishop.dev/) 
 
