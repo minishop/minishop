@@ -77,7 +77,7 @@ Laravel Minishop provides a professional and reliable foundation from which to b
 
     更新模块后如果出现页面异常或者报错, 可能需要手动强制更新 `public/` 下的模块文件, 请先备份您修改过的文件然后在项目目录( `public/` 目录的上一层)里执行:
     
-        php artisan vendor:publish --tags=public --force 
+        php artisan vendor:publish --tag=public --force 
         
 
 ## License
