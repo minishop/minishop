@@ -1,8 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Starwind
- * Date: 2017/10/8
- */
 
-require_once __DIR__ . "/catalog/index.php";
+use App\Bootstrap\Bootstrap;
+
+require __DIR__ . "/../storage/vendor/autoload.php";
+$app = Bootstrap::application();
+
+if (is_file($file = $app->make(App\Home\Index::class)->handle())) {
+    require $file;
+}
