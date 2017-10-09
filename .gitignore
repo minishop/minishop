@@ -12,3 +12,4 @@ docs/_ide_helper.php
 docs/.phpstorm.meta.php
 /app/*
 !/app/.gitignore
+/storage/packages/app/composer.json
