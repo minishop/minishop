@@ -24,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
+        'path' => storage_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
         'files' => [
             'start' => 'start.php',
             'routes' => 'Http/routes.php',
@@ -145,7 +145,7 @@ return [
     'composer' => [
         'vendor' => 'minishop',
         'author' => [
-            'name' => 'Minishop Community',
+            'name' => 'Minishop Developers Community',
             'email' => 'team@shopes.cn',
         ],
     ],
