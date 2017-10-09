@@ -1,5 +1,5 @@
 
-
+# BEGIN WordPress
 
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
@@ -25,11 +25,14 @@ Options -Indexes
 RewriteEngine On
 # If your minishop installation does not run on the main web folder make sure you folder it does run in ie. / becomes /shop/
 RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+
 
 # Redirect Trailing Slashes If Not A Folder...
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} (.+)/$
-RewriteRule ^ %1 [L,R=301]
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_URI} (.+)/$
+#RewriteRule ^ %1 [L,R=301]
 
 #RewriteRule ^sitemap.xml$ index.php?route=extension/feed/google_sitemap [L]
 #RewriteRule ^googlebase.xml$ index.php?route=extension/feed/google_base [L]
@@ -68,7 +71,8 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 # 7. disable open_basedir limitations
 # php_admin_value open_basedir none
 </IfModule>
-# BEGIN WordPress
+
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
