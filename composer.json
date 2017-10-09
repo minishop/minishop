@@ -30,11 +30,10 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('docs/.env.example', '.env');\""
+            "@php -r \"file_exists('.env') || copy('docs/.env.example', '.env');\"",
+            "@php -r \"copy('storage/app/packages/app/composer-stable.json', 'storage/app/packages/app/composer.json');\""
         ],
-        "post-create-project-cmd": [
-            "App\\Bootstrap\\Bootstrap::postCreateProject"
-        ]
+        "post-create-project-cmd": []
     },
     "extra": {
         "merge-plugin": {
@@ -67,7 +66,7 @@
     "repositories": {
         "local": {
             "type": "path",
-            "url": "storage/packages/*"
+            "url": "storage/app/packages/*"
         },
         "shopes": {
             "type": "composer",
