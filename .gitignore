@@ -7,7 +7,7 @@ node_modules
 /storage/.env*
 /storage/laravel
 composer.lock
-.env
+/.env
 docs/_ide_helper.php
 docs/.phpstorm.meta.php
 /app/*
