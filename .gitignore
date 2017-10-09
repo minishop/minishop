@@ -13,3 +13,5 @@ docs/.phpstorm.meta.php
 /app/*
 !/app/.gitignore
 /storage/*.lock
+/public/app
+/public/upgrade
