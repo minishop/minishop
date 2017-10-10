@@ -16,5 +16,5 @@ docs/.phpstorm.meta.php
 /public/app
 !/public/app/.gitignore
 /public/*
-/public/.DS_Store
 !/public/*.*
+/public/.DS_Store
